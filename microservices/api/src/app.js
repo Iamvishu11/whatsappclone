@@ -5,7 +5,9 @@ var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
 var path = require('path');
 var app = express();
+var router = express.Router();
 
+var server = require('http').Server(app);
 app.use(cookieParser());
 app.use(bodyParser());
 
