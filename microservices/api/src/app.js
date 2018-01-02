@@ -11,6 +11,11 @@ app.use(bodyParser());
 
 app.set('port',8080);
 
+app.get('/json', function(req, res) {
+       res.json({
+         message: 'Hello world'
+       });
+     });
 
 //1.1 String Hello-World
 app.get('/', function (req, res) {
